@@ -48,16 +48,16 @@
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-11"/>
 
     <!-- Include lineage-tools for lzma support -->
-    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS"
-             revision="lineage-18.1"/>
+    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-18.1"/>
 
     <!-- Use TeamWin repos for full recovery compatibility -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-11" >
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-11" />
        <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/halManifest/vts/Android.mk" />
     </project>
+
 <!-- Include shrp.xml -->
     <include name="shrp.xml" />
 </manifest>
